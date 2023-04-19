@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Parcel Sandbox</title>
+	<style>
+		body {
+		margin: 0;
+		height: 100vh;
+		overflow: hidden;
+		background-color: #000;
+		color: #fff;
+		font-family: Monospace;
+		font-size: 13px;
+		line-height: 24px;
+		overscroll-behavior: none;
+		}
+
+		#info {
+		position: absolute;
+		top: 0px;
+		width: 100%;
+		padding: 10px;
+		box-sizing: border-box;
+		text-align: center;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		pointer-events: none;
+		z-index: 1; /* TODO Solve this in HTML */
+		}
+
+		a,
+		input,
+		select {
+		pointer-events: auto;
+		}
+
+		.dg.ac {
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		z-index: 2 !important; /* TODO Solve this in HTML */
+		}
+
+		#notSupported {
+		width: 50%;
+		margin: auto;
+		background-color: #f00;
+		margin-top: 20px;
+		padding: 10px;
+		}
+
+	</style>
+	<meta charset="UTF-8" />
+</head>
+
+<body>
+	<div id="app"></div>
+
+	<script type="module" src="src/index.js">
+	</script>
+</body>
+
+</html>
